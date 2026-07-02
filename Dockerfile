@@ -7,7 +7,7 @@ FROM nginx:1.27-alpine
 COPY nginx.conf /etc/nginx/conf.d/default.conf
 
 # Site files
-COPY index.html style.css script.js favicon.svg /usr/share/nginx/html/
+COPY index.html style.css script.js favicon.svg profile.jpg /usr/share/nginx/html/
 
 EXPOSE 80
 

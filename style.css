@@ -303,9 +303,9 @@ html[data-theme="light"] .theme-toggle .icon-moon {
 
 .avatar-wrap {
   position: relative;
-  width: 112px;
-  height: 112px;
-  margin-bottom: 26px;
+  width: clamp(154px, 22vw, 198px);
+  height: clamp(154px, 22vw, 198px);
+  margin-bottom: 22px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -314,7 +314,7 @@ html[data-theme="light"] .theme-toggle .icon-moon {
 
 .avatar-ring {
   position: absolute;
-  inset: -8px;
+  inset: -10px;
   border-radius: 50%;
   border: 1.5px solid color-mix(in srgb, var(--accent) 80%, transparent);
   opacity: 0.55;
@@ -322,8 +322,8 @@ html[data-theme="light"] .theme-toggle .icon-moon {
 }
 
 .avatar {
-  width: 112px;
-  height: 112px;
+  width: 100%;
+  height: 100%;
   border-radius: 50%;
   background: linear-gradient(145deg, color-mix(in srgb, var(--surface-highlight) 68%, transparent), var(--surface));
   border: 1px solid var(--border-strong);
@@ -371,7 +371,7 @@ html[data-theme="light"] .theme-toggle .icon-moon {
 .name {
   font-family: var(--font-display);
   font-weight: 700;
-  font-size: clamp(2.5rem, 8vw, 4rem);
+  font-size: clamp(2rem, 5.8vw, 3.2rem);
   letter-spacing: -0.03em;
   line-height: 1.04;
   margin: 0 0 14px;
@@ -379,11 +379,11 @@ html[data-theme="light"] .theme-toggle .icon-moon {
 }
 
 .subtitle {
-  font-size: clamp(15.5px, 2vw, 17px);
-  line-height: 1.7;
+  font-size: clamp(14px, 1.6vw, 15.5px);
+  line-height: 1.65;
   color: var(--text-muted);
   margin: 0;
-  max-width: 440px;
+  max-width: 380px;
 }
 
 .scroll-cue {
