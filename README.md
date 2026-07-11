@@ -22,6 +22,7 @@ const CONFIG = {
   instagram: { url: "..." },
   whatsapp:  { number: "9733...", message: "" },
   linkedin:  { url: "..." },
+  cv:        { url: "Ahmed_Khalil_Abdulameer_CV_V3.pdf" },
   email:     { address: "...", subject: "" },
 };
 ```

@@ -18,6 +18,9 @@ const CONFIG = {
   linkedin: {
     url: "https://www.linkedin.com/in/ahmed-khalil-abdulameer/",
   },
+  cv: {
+    url: "Ahmed_Khalil_Abdulameer_CV_V3.pdf",
+  },
   email: {
     address: "its.ahmad09@gmail.com",
     // Optional pre-filled subject line. Leave as "" for none.
@@ -39,8 +42,9 @@ const CONFIG = {
     return message ? `${base}?text=${encodeURIComponent(message)}` : base;
   }
 
-  function buildMailtoUrl({ address, subject }) {
-    return subject ? `mailto:${address}?subject=${encodeURIComponent(subject)}` : `mailto:${address}`;
+  function buildGmailUrl({ address, subject }) {
+    const base = `https://mail.google.com/mail/?view=cm&fs=1&to=${encodeURIComponent(address)}`;
+    return subject ? `${base}&su=${encodeURIComponent(subject)}` : base;
   }
 
   function wireLinks() {
@@ -48,7 +52,8 @@ const CONFIG = {
       instagram: CONFIG.instagram.url,
       whatsapp: buildWhatsAppUrl(CONFIG.whatsapp),
       linkedin: CONFIG.linkedin.url,
-      email: buildMailtoUrl(CONFIG.email),
+      cv: CONFIG.cv.url,
+      email: buildGmailUrl(CONFIG.email),
     };
 
     document.querySelectorAll("[data-social]").forEach((el) => {

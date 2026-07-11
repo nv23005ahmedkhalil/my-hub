@@ -437,6 +437,13 @@ html[data-theme="light"] .theme-toggle .icon-moon {
   perspective: 1100px;
 }
 
+.card[data-social="cv"] {
+  grid-column: 1 / -1;
+  max-width: calc((100% - 16px) / 2);
+  width: 100%;
+  justify-self: center;
+}
+
 .card {
   --mx: 50%;
   --my: 50%;
@@ -459,7 +466,7 @@ html[data-theme="light"] .theme-toggle .icon-moon {
   cursor: pointer;
   overflow: hidden;
   transform-style: preserve-3d;
-  transform: translate3d(0, var(--lift), 0) rotateX(var(--tilt-x)) rotateY(var(--tilt-y));
+  transform: translateX(var(--card-shift-x, 0px)) translate3d(0, var(--lift), 0) rotateX(var(--tilt-x)) rotateY(var(--tilt-y));
   transition: border-color 0.34s var(--ease), box-shadow 0.34s var(--ease), transform 0.22s var(--ease-snappy);
 }
 
