@@ -18,9 +18,6 @@ const CONFIG = {
   linkedin: {
     url: "https://www.linkedin.com/in/ahmed-khalil-abdulameer/",
   },
-  cv: {
-    url: "Ahmed_Khalil_Abdulameer_CV_V3.pdf",
-  },
   email: {
     address: "its.ahmad09@gmail.com",
     // Optional pre-filled subject line. Leave as "" for none.
@@ -52,7 +49,6 @@ const CONFIG = {
       instagram: CONFIG.instagram.url,
       whatsapp: buildWhatsAppUrl(CONFIG.whatsapp),
       linkedin: CONFIG.linkedin.url,
-      cv: CONFIG.cv.url,
       email: buildGmailUrl(CONFIG.email),
     };
 

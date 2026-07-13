@@ -437,13 +437,6 @@ html[data-theme="light"] .theme-toggle .icon-moon {
   perspective: 1100px;
 }
 
-.card[data-social="cv"] {
-  grid-column: 1 / -1;
-  max-width: calc((100% - 16px) / 2);
-  width: 100%;
-  justify-self: center;
-}
-
 .card {
   --mx: 50%;
   --my: 50%;
