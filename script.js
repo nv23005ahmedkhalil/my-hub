@@ -16,7 +16,7 @@ const CONFIG = {
     message: "",
   },
   linkedin: {
-    url: "https://www.linkedin.com/in/ahmed-khalil-abdulameer/",
+    url: "https://www.linkedin.com/in/ahmed-khalil-jasim/",
   },
   email: {
     address: "its.ahmad09@gmail.com",
